@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>CSS website layout</title>
+<style>
+	body {
+		font-family: Arial;
+		padding: 10px;
+		background: #f1f1f1;
+	}
+	/*style the header */
+	.header {
+		padding:170px;
+		text-align: center;
+		background: white;
+		background-image: url("logo1.png");
+		background-repeat: no-reapet;
+
+	}
+
+	* {
+		box sizing: border-box;
+	}
+	/*style the top navigation bar*/
+	.topnav{
+		overflow: hidden;
+		background-color: #333;
+	}
+
+/* style the topnav links */
+.topnav a {
+	float: left;
+	display:  block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+	/* change color on hover */
+	.topnav a:hover {
+		backgroud-color: #ddd;
+		color: black;
+	}
+
+	/*create two unequal coloums that floats next to each other*/
+	.leftcolumn{
+		float: left;
+		width: 75%;
+
+	}
+	/*right column*/
+.rightcolumn{
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding left: 20px; 
+}
+ /* fake image*/
+ .fakeimg{
+ 	background-color: #aaa;
+ 	width: 100%;
+ 	padding: 20Px;
+ }
+  /*add acard effect for articles*/
+  .card {
+  	background-color: white;
+  	padding: 20px;
+  	margin-top: 20px;
+  }
+  /*clear floats after the columns*/
+  .row:: after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
+
+  /*footer*/
+  .footer{
+  	padding: 20px;
+  	text-align: center;
+  	background: #ddd;
+  	margin-top: 20px;
+  }
+  /* responsive layout - when the screen is less than 800px wide, make the two columnstack on top each other instead of next to each other*/
+  @media screen and (max-width: 800px){
+  	.leftcolumn, .rightcolumn{
+  		width: 100%;
+  		padding: 0;
+  	}
+  	}
+  	/* responsive layout - when the screen is less than 400px wide, make the navigation stack on top off each other instead of next to each other*/
+  	@media screen and (max-width: 400px) {
+  		.topnav a {
+  			float: none;
+  			width: 100%;
+  		}
+  	}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1></h1>
+		<p>Windy Anggraeni</p>
+	</div>
+
+	<div class="topnav">
+     <a href ="#">hp1</a>
+	 <a href ="#">hp2</a>
+	 <a href ="#">hp3</a>
+</div>
+
+ <div class="row">
+ 	<div class="leftcolumn">
+ 		<div class="card">
+ 			<h2>SAMSUNG TERBARU 2024</h2>
+            <h5> dec 14, 2024</h5>
+            <img src="hp2.jpeg"height="400px"width="100%">
+            <p>Samsung Electronics</p>
+            <p> Samsung Electronics Co., Ltd. adalah sebuah perusahaan elektronik multinasional yang berkantor pusat di Distrik Yeongtong, Suwon, Korea Selatan. Perusahaan ini adalah inti dari chaebol Samsung, karena menyumbang 70% dari total pendapatan grup tersebut pada tahun 2012.</p>
+        </div>
+        <div class="card">
+        	<h2>hp samsung</h2>
+        	<h5> 2024</h5>
+        	<img src="hp1.jpg"height="400px"width="100%">
+        	<p>Samsung</p>
+            <p>.mulai dari RP 458.250/bln. kalkulator finansial.
+            . 6.6"FHD+Super AMOLED adaptive 120Hz display
+            . 50mp ide angle camera idth ois, vdis
+            . 5,000 mah (typical) more than 2 days battery</p>
+        </div>
+        <div class="card">
+        	<h2>HP SAMSUNG</h2>
+        	<h5> 20sep,2024</h5>
+        	<img src="samsung.jpeg"height="400px"width="100%">
+        	<p>Some text..</p>
+            <p> Galaxy Tab S9+, Tab S9 ULtra is rated as IP68.based on test condition for submersion in up to 1.5 meter of fres water for up to 30 mins. not advised for beach or pool use</p>
+        </div>
+        <div class="card">
+        	<h2>HP SAMSUNG</h2>
+        	<h5>  sep 2, 2024</h5>
+        	<img src="hp 10.jpg"height="400px"width="100%">
+        	<p>Samsung</p>
+            <p> “Samsung merupakan merk HP yang banyak digunakan oleh masyarakat Indonesia. Belum lama ini, samsung meluncurkan seri terbaru, yaitu samsung A24ultra. Melengkapi pilihanmu dalam membeli HP”
+“Gunakan HP dengan performa yang telah teruji dari brand HP yang berkuaitas. Gunakan hp samsung, untuk menunjang kegiatanmu menggunakan HP”.</p>
+        </div>
+        <div class="card">
+        	<h2>HP SAMSUNG</h2>
+        	<h5> sep 18, 2024</h5>
+        	<img src="hp11.jpg"height="250px"width="100%">        	
+        	<p>Some text..</p>
+            <p> “Jangan sampai ketinggalan, kamu wajib segera membeli HP Samsung A24ULtra. Dengan kapasitas RAM yang besar yaitu 8GB, kamu tidak perlu khawatir lagi menggunakan banyak aplikasi di dalam HP.”</p>
+        </div>
+       </div>
+       <div class="rightcolumn">
+       	<div class="card">
+       		<h2>About me</h2>
+       		<img src="logo.png"height="100px"width="100%">
+       	</div>
+       	<div classs="card">
+       		<h3>popular post</h3>
+       		<img src="hp4.jpg"height="150px"width="100%">
+       		<img src="hp5.png"height="200px"width="100%">
+       		<img src="hp6.jpeg"height="150px"width="100%">
+       		<img src="hp7.jpg"height="200px"width="100%">
+       	</div>
+       	<div class="card">
+       		<h3>Follow Me</h3>
+       		<p>Some text..</p>
+       	</div>
+       </div>
+   </div>
+
+   <div class="footer">
+   	<h2>Footer</h2>
+   </div>
+   
+</body>
+</html>
